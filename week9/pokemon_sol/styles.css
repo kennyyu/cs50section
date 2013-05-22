@@ -1,0 +1,49 @@
+/* 
+ * styles.css
+ *  
+ * Makes the index page look perrrrrty.
+ */
+
+// TODO
+
+body
+{
+  font-family: Monaco, Arial, Helvetica;
+  background-color: #FFFFFF;
+}
+
+table#list
+{
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  border-collapse: collapse;
+}
+
+table#list td {
+  border-width: 1px;
+  padding: 1px;
+  border-style: inset;
+  border-color: #000000;
+  background-color: white;
+}
+
+table#list th {
+  border-width: 1px;
+  padding: 1px;
+  border-style: inset;
+  border-color: #000000;
+}
+
+.section
+{
+  background-color: #CCCCCC;
+  padding: 5px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  -moz-box-shadow: 0 0 3px 2px #888;
+  -webkit-box-shadow: 0 0 3px 2px #888;
+  box-shadow: 0 0 3px 2px #888;
+  margin-top: 10px;
+}

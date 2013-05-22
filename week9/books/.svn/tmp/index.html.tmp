@@ -1,0 +1,79 @@
+<!DOCTYPE>
+
+<html>
+	<head>
+		
+		<title>Book Club</title>
+		
+		<meta charset='utf-8'>    
+    	<link rel="stylesheet" type="text/css" href="style.css" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src='books.js'></script>
+		
+	</head>
+	
+	<body>
+		
+		<div id='wrapper'>
+			<div id='header'>
+				<div id='title'>
+					BB Book Club<br />
+					Reading Suggestions</div>
+			</div>
+			
+			<div id='controls'>
+				<form id='controls_form'>
+					<table id='controls_table'>
+						<tbody>
+							<tr id='controlsclick'>
+								<td colspan='2' id='controlsclickhere'>
+									Click here to add a book!
+								</td>
+							</tr>
+							<tr class='controlspopup'>
+								<td>
+									<label>Title:</label><br />
+								</td>
+								<td>
+									<input class="controls_input" id="title" type="text" /><br />
+								</td>
+							</tr>
+							<tr class='controlspopup'>
+								<td>
+									<label>Author(s):</label><br />
+								</td>
+								<td>
+									<input class="controls_input" id="authors" type="text" /><br />
+								</td>
+							</tr>
+							<tr class='controlspopup'>
+								<td>
+									<label>Image URL: </label><br />
+								</td>
+								<td>
+									<input class="controls_input" id="imageurl" type="text" /><br />
+								</td>
+							</tr>
+							<tr class='controlspopup'>
+								<td>
+								</td>
+								<td>
+                                    <input type="submit" value="Add Book!" />
+                                </td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+			
+			<div id='list'>
+				<table id='list_table'>
+					<tbody id='list_tbody'>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+	</body>
+</html>

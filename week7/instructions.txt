@@ -1,0 +1,17 @@
+
+(1) In bst.c, fill out the stubs for those functions. Test your functions by
+    uncommenting the code in main. Compile with 'make' and run the 'bst'
+    executable. [solutions for this will be posted after section]
+
+
+Because you must implement your own data structures for this week,
+I will not post the solutions to linkedlist.c. I have, however, left the
+stubs and the pseudocode for it to help you implement it. If your implementation works,
+then running 'run' should output the correct stuff and the right behavior
+for stacks and queues. 
+
+(2) Implement make_node [solutions posted after section]
+(3) Implement free_list [solutions posted after section]
+(4) finish insert, remove, get_first, and get_nth [solutions posted next week---]
+(5) finish the queue operations, using the stack operations only. [solutions will be posted after section]
+ 

@@ -1,0 +1,317 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+
+@font-face {
+	font-family: junction;
+	src: url('junction/junction.ttf');
+}
+
+@font-face {
+	font-family: raleway;
+	src: url('Raleway/raleway_thin.ttf');
+}
+
+body {
+	background: #202020;
+	color: #676767;
+}
+
+#header {
+	background: #3D3D3D;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-moz-box-shadow: 0 0 3px 2px #888;
+	-webkit-box-shadow: 0 0 3px 2px #888;
+	box-shadow: 0 0 3px 2px #888;
+	height: 90px;
+	width: 400px;
+	position: absolute;
+	left: 50px;
+	color: #676767;
+	font: 40px raleway;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #FFF;
+}
+
+#controls {
+	background: #3D3D3D;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-moz-box-shadow: 0 0 3px 2px #888;
+	-webkit-box-shadow: 0 0 3px 2px #888;
+	box-shadow: 0 0 3px 2px #888;
+	height: 100px;
+	width: 400px;
+	position: absolute;
+	top: 120px;
+	left: 50px;
+	color: #676767;
+	font: 15px raleway;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+}
+
+/*
+#list {
+	background: #3D3D3D;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-moz-box-shadow: 0 0 3px 2px #888;
+	-webkit-box-shadow: 0 0 3px 2px #888;
+	box-shadow: 0 0 3px 2px #888;
+	width: 420px;
+	position: absolute;
+	left: 50px;
+	top: 190px;
+	color: #676767;
+	font: 15px raleway;
+	padding: 0px;
+	margin: 10px;
+	text-align: center;
+}
+*/
+
+#list {
+	width: 440px;
+	position: absolute;
+	left: 50px;
+	top: 305px;
+	color: #676767;
+	font: 15px raleway;
+}
+
+#search {
+	background: #3D3D3D;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-moz-box-shadow: 0 0 3px 2px #888;
+	-webkit-box-shadow: 0 0 3px 2px #888;
+	box-shadow: 0 0 3px 2px #888;
+	height: 25px;
+	width: 400px;
+	position: absolute;
+	top: 250px;
+	left: 50px;
+	color: #676767;
+	font: 15px raleway;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+}
+
+.bookinfo {
+	background: #3D3D3D;
+	-webkit-border-top-right-radius: 7px;
+	-webkit-border-bottom-right-radius: 7px;
+	-moz-border-radius-topright: 7px;
+	-moz-border-radius-bottomright: 7px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	border-left: 1px solid #777;
+	-moz-box-shadow: 0 0 3px 2px #888;
+	-webkit-box-shadow: 0 0 3px 2px #888;
+	box-shadow: 0 0 3px 2px #888;
+	width: 320px;
+	color: #676767;
+	font: 15px raleway;
+	padding: 10px;
+	margin-left: -20px;
+	vertical-align: top;
+}
+
+.bookimage {
+	background: #3D3D3D;
+	-webkit-border-top-left-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+	-moz-box-shadow: 0 0 3px 2px #888;
+	-webkit-box-shadow: 0 0 3px 2px #888;
+	box-shadow: 0 0 3px 2px #888;
+	color: #676767;
+	font: 15px raleway;
+	padding: 10px;
+	vertical-align: top;
+}
+
+#controlsclickhere {
+	padding-top: 35px;
+	padding-bottom: 35px;
+	font: 30px raleway;
+	text-align: center;
+}
+
+#controlsclickhere:hover {
+	padding-top: 35px;
+	padding-bottom: 35px;
+	font: 30px raleway;
+	text-align: center;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-moz-box-shadow: 0 0 10px 10px #8D8D8D;
+	-webkit-box-shadow: 0 0 10px 10px #8D8D8D;
+	box-shadow: 0 0 10px 10px #8D8D8D;
+	background: #8D8D8D;
+}
+
+.controlspopup {
+	display: none;
+}
+
+table#list_table {
+	margin-top: -10px;
+	margin-bottom: -10px;
+	border-spacing: 0px 10px;
+	padding: 10px;
+}
+
+table#controls_table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 400px;
+}
+
+img {
+	width: 70px;
+	height: auto;
+}
+
+p.booktitle {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+p.bookauthors {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+div.comments_one {
+	border-top: 1px solid #777;
+	border-bottom: 1px solid #777;
+	margin-bottom: -1px;
+	padding: 10px;
+	min-height: 40px;
+}
+
+div.remove {
+	float: right;
+	font-size: 20px;
+	padding: 3px;
+	height: 17px;
+	width: 16px;
+	text-align: center;
+}
+
+div.remove:hover {
+	float: right;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-moz-box-shadow: 0 0 3px 2px #888;
+	-webkit-box-shadow: 0 0 3px 2px #888;
+	box-shadow: 0 0 3px 2px #888;
+	font-size: 20px;
+	padding: 3px;
+	height: 17px;
+	width: 16px;
+	text-align: center;
+	background: #8D8D8D;	
+}
+
+input.controls_input {
+	width: 280px;
+}
+
+input#search_input {
+	width: 220px;
+}
+
+td.leftcontrols {
+	width: 110px;
+}
+
+.commentsbox {
+	margin-top: 2px;
+	width: 300px;
+	height: 50px;
+}
+
+a.seecomments:link, a.hidecomments:link {
+	color: #898989;
+	text-decoration: none;
+}
+a.seecomments:visited, a.hidecomments:visited {
+	color: #898989;
+	text-decoration: none;
+}
+a.seecomments:hover, a.hidecomments:hover {
+	color: #898989;
+	text-decoration: underline;
+}
+a.seecomments:focus, a.hidecomments:focus {
+	color: #898989;
+	text-decoration: underline;
+}
+a.seecomments:active, a.hidecomments:active {	
+	color: #898989;
+	text-decoration: underline;
+}
+
+td.bookimage {
+	width: 70px;
+}

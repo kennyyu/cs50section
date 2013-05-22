@@ -1,0 +1,46 @@
+/* 
+ * Problem 0 (pokemon.h)
+ * Write an enumerated type called poketype with these 4 elements:
+ *    - FIRE
+ *    - WATER
+ *    - ELECTRIC
+ *    - LEAF
+ * Typedef the enumerated type so that we can refer to it simply as 'poketype'
+ */
+
+/*
+ * Problem 1 (pokemon.h)
+ * Write a struct pokemon that has:
+ *    - name field of 256 chars
+ *    - poketype field called type
+ *    - int field called level
+ * Typedef the struct so that we can reference it simply as 'pokemon'
+ */
+
+/*
+ * Problem 2 (write_pokemon.c)
+ * Complete main with the following specifications:
+ *    (1) main takes in two command line arguments in the order: the output file name
+ *        and the number of pokemon to prompt for, in that order
+ *    (2) open a file pointer to the output file for writing
+ *    (3) for each pokemon, prompt the user for the following input:
+ *        (a) pokemon's name. You will need to use strcpy to copy the string returned
+ *            by GetString() into the name char buffer.
+ *        (b) pokemon's poketype (user can only enter ints representing the previously
+ *            defined poketype enumerated type)
+ *        (c) pokemon's level
+ *        (d) write the struct containing the data into the output file
+ *    (4) after prompting for all the pokemon, close the file
+ */
+
+/*
+ * Problem 3 (read_pokemon.c)
+ * Complete main with the following specifications:
+ *    (1) main takes in one command line argument: the input file name
+ *    (2) open a file pointer to the output file for reading
+ *    (3) while there are still bytes in the file:
+ *        (a) read a pokemon struct size's worth of bytes into a pokemon struct
+ *        (b) output the name, type (use poketype_to_string), and level of the 
+ *            pokemon
+ *    (4) close the file when there are no more pokemon to be printed
+ */

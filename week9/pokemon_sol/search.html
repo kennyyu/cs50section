@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Pokemon: Gotta catch 'em all!</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript">
+		
+		/* after the page is loading, execute search_init */
+		$(document).ready(search_init);
+		
+		/* bind the query textbox with a keyup event handler 
+		 * everytime you enter text, a GET request will be sent to the
+		 * server to find all pokemon that may begin with that query
+		 * string.
+		 */
+		function search_init() {
+			$("#query").keyup(function(){
+				var query = $("#query").val();
+				if (query != "") {
+					$.ajax({
+						url: "get.php",
+						data: {q: query},
+						success: add_pokemon,
+						type: "GET"
+					});
+				}
+			});
+		}
+		
+		/* parse the json data and add it to our table */
+		function add_pokemon(data) {
+			$("#results").empty();
+			data = JSON.parse(data);
+			for (var row in data) {
+				var td_id = $("<td>").html(data[row]["id"]);
+				var td_name = $("<td>").html(data[row]["name"]);
+				var td_type = $("<td>").html(data[row]["type"]);
+				var td_level = $("<td>").html(data[row]["level"]);
+				var newrow = $("<tr>");
+				newrow.append(td_id);
+				newrow.append(td_name);
+				newrow.append(td_type);
+				newrow.append(td_level);
+				$("#results").append(newrow);
+			}
+		}
+		</script>
+    </head>
+    <body>
+        <div class="section">
+            <h1>My Pokedex</h1>
+        </div>
+        <div class="section">
+            <h2>Search by Type:</h2>
+			<input type="text" id="query">
+		</div>
+        <div class="section">
+            <h2>Pokemon I've Seen:</h2>
+            <table id="list">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>type</th>
+                        <th>level</th>
+                    </tr>
+                </thead>
+                <tbody id="results">
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
